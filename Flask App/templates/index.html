@@ -1,0 +1,54 @@
+{% extends "base.html"%}
+
+{% block head %}
+Home
+{% endblock%}
+
+
+{% block body %}
+<br>
+<br>
+<br>
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic"><b>Dedicated to do the Best</b></h1>
+      <p class="lead my-3">Cyberr is the next big revolution in Sri Lankan Gaming, Taking it to the Next level
+        in International
+      </p>
+      <p class="lead mb-0"><a href="/posts" class="text-white fw-bold">Visit the Blog...</a></p>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="D:/gAMes/VS projects/Flask App/cw.png" class="d-block w-100" alt="Cold War">
+      </div>
+      <div class="carousel-item">
+        <img src="D:/gAMes/VS projects/Flask App/cod 4.jpg" class="d-block w-100" alt="Call of Duty 4">
+      </div>
+      <div class="carousel-item">
+        <img src="D:/gAMes/VS projects/Flask App/bf4.jpg" class="d-block w-100" alt="Battlefield 4">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+  {% endblock%}

@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block head %} 
+     Posts
+{% endblock%}
+
+
+{% block body %} 
+
+<hr>
+     <h2>Add New Article</h2>
+     <form action="/posts" method="POST">
+       Title:<br>
+       <input class="form-control" type="text" id="Title" name="Title", placeholder="Add New Title" aria-label="Search">
+       <br>
+       Content:<br>
+       <div class="mb-3">
+        <textarea class="form-control" id="Content" type="text" rows="15" placeholder="Place Your Content Here" name="Content"></textarea>
+       </div>
+       
+       <input class="btn btn-success"type="submit" value="Publish">
+     </form>
+    <hr>
+
+{% endblock%}

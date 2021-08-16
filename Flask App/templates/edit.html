@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block head %} 
+     Posts
+{% endblock%}
+
+
+{% block body %} 
+<h1>Edit Post</h1>  
+
+    <hr>
+     <form action="/posts/edit/{{post.id}}" method="POST">
+       Title: 
+       <input class="form-control" type="text" id="Title" name="Title", placeholder="Add New Title" value="{{post.title}}" aria-label="Search">
+       <br>
+       Content: 
+       <div class="mb-3">
+        <textarea class="form-control" id="Content" rows="10" name="Content" type="text">{{post.content}}</textarea>
+       </div>
+       <br>
+       <input class="btn btn-warning" type="submit" value="Save">
+     </form>
+    <hr>
+
+{% endblock%}
